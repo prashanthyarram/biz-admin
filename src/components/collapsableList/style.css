@@ -1,0 +1,109 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Left Section - Collapsible List */
+.left-section {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.list-container {
+  list-style: none;
+}
+
+.list-item {
+  color: black;
+  border-bottom: 1.5px solid #c1c1c1;
+  padding: 15px;
+  padding-block: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.last-list-item {
+  color: black;
+  padding: 15px;
+  padding-block: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.content {
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.content p {
+  color: #686868;
+}
+
+/* Right Section - Image */
+.right-section {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 10px solid black;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+    height: 50vh;
+  }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Push arrow to the right */
+  width: 100%; /* Ensure it spans the full width */
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+  font-size: 16px;
+  margin-left: auto; /* Ensure arrow moves to the end */
+}
+
+.arrow.open {
+  transform: rotate(180deg); /* Flip the arrow */
+}
+
+.head-text {
+  font: 1.12rem;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 16px;
+  color: #e57627;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
