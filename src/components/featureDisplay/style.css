@@ -6,7 +6,7 @@
   font-family: "Arial", sans-serif;
 }
 
-.container {
+.container-box {
   display: flex;
   height: 100vh;
 }
@@ -81,16 +81,9 @@
   }
 }
 
-.title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* Push arrow to the right */
-  width: 100%; /* Ensure it spans the full width */
-}
-
 .head-text {
   margin-left: 0% !important;
-  font: 1.12rem;
+  font-size: 1.12rem;
   font-weight: 600;
   text-align: left;
   color: #e57627;
@@ -98,9 +91,8 @@
   margin-bottom: 15px;
 }
 
-.title {
-  font: 56px/1 var(--primary-bold);
-  color: black;
+.feature-title {
+  font-size: 2rem;
   text-align: left;
   margin-bottom: 15px;
   font-size: 2.2rem;
@@ -118,4 +110,8 @@
   font-size: 1.25rem;
   margin-bottom: 0px;
   text-align: left;
+}
+
+.blue-background .left-section p {
+  color: white !important;
 }

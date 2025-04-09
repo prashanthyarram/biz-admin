@@ -1,0 +1,70 @@
+.carousel-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Left Side - Text List */
+.text-list {
+  width: 25%;
+  padding: 20px;
+}
+
+.text-item {
+  padding: 15px;
+  border-left: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.text-item h3 {
+  margin: 0;
+  font-size: 1rem;
+  text-align: left;
+  color: #333;
+}
+
+.text-item p {
+  margin: 5px 0 0;
+  text-align: left;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.text-item.active {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.text-item.active h3 {
+  color: #163b85 !important;
+}
+
+/* Right Side - Carousel */
+.carousel {
+  width: 75%;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 8px solid black;
+}
+
+/* Responsive - Mobile View */
+@media (max-width: 768px) {
+  .carousel-container {
+    flex-direction: column;
+  }
+
+  .text-list {
+    display: none; /* Hide text on mobile */
+  }
+
+  .carousel {
+    width: 100%;
+  }
+}

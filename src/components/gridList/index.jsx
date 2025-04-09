@@ -3,28 +3,17 @@ import "./style.css";
 import demoImg from "../../../public/demo-grid-img.webp";
 import demoMobileImg from "../../../public/mobile-demo.jpeg";
 
-const GridList = () => {
+const GridList = ({ whyChooseUs = [], title = "" }) => {
   return (
     <div className="grid-container">
       <div className="grid-item blue-background first-grid-item">
         <div className="grid-list">
           <span>Why Choose Bizadmin?</span>
-          <h2>Complete check list management</h2>
+          <h2>{title}</h2>
           <ul>
-            <li>Focus on what matters most</li>
-            <li>Reduce time spent on trivial tasks and improve efficiency</li>
-            <li>Avoid missing deadlines</li>
-            <li>
-              Foster better communication and collaboration within your team
-            </li>
-            <li>Delegate tasks effectively and ensure accountability.</li>
-            <li>
-              Simplify your workflow and reduce the overwhelm of managing
-              multiple tasks
-            </li>
-            <li>
-              Gain peace of mind knowing you have a reliable system in place.
-            </li>
+            {whyChooseUs.map((reason, index) => (
+              <li key={index}>{reason}</li>
+            ))}
           </ul>
         </div>
       </div>

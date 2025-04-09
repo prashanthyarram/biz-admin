@@ -1,11 +1,11 @@
 import react from "react";
-// import "./style.css";
+import "./style.css";
 
 const Part1 = ({ title, tagline, desc = "" }) => {
   return (
     <div className="left-section">
       <h4 className="head-text">{title}</h4>
-      <div className="title">{tagline}</div>
+      <div className="feature-title">{tagline}</div>
       <div className="content">
         <p className="desc">{desc}</p>
       </div>
@@ -29,7 +29,11 @@ const FeatureDisplay = ({
   orientation = "left",
 }) => {
   return (
-    <div className="container">
+    <div
+      className={`container-box ${
+        orientation !== "left" ? "blue-background" : ""
+      }`}
+    >
       {orientation === "left" ? (
         <>
           <Part1 title={title} tagline={tagline} desc={desc} />

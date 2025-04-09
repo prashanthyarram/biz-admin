@@ -8,7 +8,8 @@
 
 .container {
   display: flex;
-  height: 100vh;
+  height: 100%;
+  padding: 80px 0;
 }
 
 /* Left Section - Collapsible List */
@@ -34,6 +35,12 @@
   text-align: left;
 }
 
+.list-item.active {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 8px;
+  background-color: white;
+}
+
 .last-list-item {
   color: black;
   padding: 15px;
@@ -41,6 +48,12 @@
   cursor: pointer;
   transition: all 0.3s ease;
   text-align: left;
+}
+
+.last-list-item.active {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 8px;
+  background-color: white;
 }
 
 .content {
@@ -94,16 +107,35 @@
   margin-left: auto; /* Ensure arrow moves to the end */
 }
 
+.dropdown-desc {
+  text-align: left;
+}
 .arrow.open {
   transform: rotate(180deg); /* Flip the arrow */
 }
 
 .head-text {
-  font: 1.12rem;
+  font-size: 1.12rem;
   font-weight: 600;
   text-align: left;
   margin-left: 16px;
   color: #e57627;
   text-transform: uppercase;
   margin-bottom: 15px;
+}
+
+.blue-background ul li {
+  color: white !important;
+}
+
+.blue-background .list-item.active {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 8px;
+  background-color: #23478f;
+}
+
+.blue-background .last-list-item.active {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 8px;
+  background-color: #23478f;
 }

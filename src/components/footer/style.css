@@ -1,0 +1,54 @@
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  width: 100%;
+  background: #222 url(../../public/bg-noise.png);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Title Section */
+.footer-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Links Section */
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ffcc00;
+}
+
+/* Bottom Section (Contact + Copyright) */
+.footer-bottom p {
+  font-size: 14px;
+  color: #bbb;
+  margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

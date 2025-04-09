@@ -1,0 +1,76 @@
+.conclusion-section {
+  text-align: center;
+  padding: 40px;
+  border-radius: 8px;
+  margin: 0;
+  width: 100%;
+  padding-top: 80px;
+  background-color: #ffcc00;
+}
+
+.conclusion-section p {
+  font-size: 1.22rem;
+  margin-bottom: 0px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.726);
+}
+
+.conclusion-section h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 24px;
+  color: black;
+  font-size: 2.2rem;
+  line-height: normal;
+  font-weight: 700;
+}
+
+.contact-button {
+  background-color: #132f65;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.contact-button:hover {
+  background-color: #e6b800;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .conclusion-section {
+    padding: 15px;
+  }
+
+  .conclusion-section p {
+    font-size: 16px;
+  }
+
+  .contact-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .conclusion-section {
+    padding: 10px;
+  }
+
+  .conclusion-section p {
+    font-size: 14px;
+  }
+
+  .contact-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+}
